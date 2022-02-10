@@ -8,7 +8,8 @@
 header{
     display:flex;
     justify-content: space-between;
-    background-color:gray;
+    background-color:#14213d;
+    color:#fca311;
 }
 
 nav{
@@ -18,4 +19,11 @@ nav{
 nav ul{
     display:flex;
     justify-content: space-evenly;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    cursor: pointer;
+    color:#fca311;
 }
