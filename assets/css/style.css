@@ -36,3 +36,18 @@ figure{
     height:300px;
     background-color: #e5e5e5;
 }
+
+/* About me */
+#about{
+    height:300px;
+}
+
+/* Work */
+#work{
+    height:300px;
+}
+
+/* Contact */
+#contact{
+    height:300px;
+}
