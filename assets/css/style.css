@@ -1,9 +1,16 @@
+/* Remove margin and padding for whole page */
+*{
+    margin:0;
+    padding:0;
+}
+
 /* Navigation bar */
 header{
     display:flex;
     justify-content: space-between;
     position: fixed;
     top:0;
+    background-color:gray;
 }
 
 nav{
