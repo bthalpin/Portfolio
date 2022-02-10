@@ -40,6 +40,7 @@ figure{
 /* About me */
 #about{
     height:300px;
+    background-color: beige;
 }
 
 /* Work */
@@ -50,4 +51,5 @@ figure{
 /* Contact */
 #contact{
     height:300px;
+    background-color: beige;
 }
