@@ -1,4 +1,16 @@
+/* Navigation bar */
 header{
     display:flex;
     justify-content: space-between;
+    position: fixed;
+    top:0;
+}
+
+nav{
+    width:30%;
+}
+
+nav ul{
+    display:flex;
+    justify-content: space-evenly;
 }
