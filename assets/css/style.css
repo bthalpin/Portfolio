@@ -90,6 +90,7 @@ figure{
     margin:1rem;
     transition:all 0.3s ease-in-out;
     cursor: pointer;
+    box-shadow: 0.25rem 0.25rem 0.25rem black;
 }
 
 .project:hover{
