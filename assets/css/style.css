@@ -31,6 +31,7 @@ nav a{
     color:#fca311;
 }
 
+/* Add glow to links */
 nav a:hover{
     color:white;
     text-shadow: 0px 0px 10px white;
@@ -51,6 +52,15 @@ figure{
 /* Work */
 #work{
     height:300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Container for all projects */
+.project{
+    height:100px;
+    background: black;
 }
 
 /* Contact */
