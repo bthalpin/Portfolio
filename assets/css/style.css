@@ -63,6 +63,16 @@ figure{
     background: black;
 }
 
+/* First project */
+.large{
+    flex:1 1 50%;
+}
+
+/* Other projects */
+.small{
+    flex:0 0 25%;
+}
+
 /* Contact */
 #contact{
     height:300px;
