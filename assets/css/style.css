@@ -64,6 +64,8 @@ figure{
 /* Work */
 #work{
     clear:both;
+    display:flex;
+    justify-content: space-around;
 }
 
 /* Container for projects */
@@ -72,6 +74,7 @@ figure{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 /* Container for all projects */
