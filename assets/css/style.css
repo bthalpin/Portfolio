@@ -3,6 +3,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 /* Navigation bar */
@@ -47,6 +48,10 @@ figure{
 #about{
     height:300px;
     background-color: #cdbee7;
+}
+
+.about-container{
+    width:70vw;
 }
 
 /* Portrait picture */
