@@ -8,7 +8,7 @@
 /* Navigation bar */
 header{
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background-color:#14213d;
     padding:20px;
