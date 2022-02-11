@@ -55,6 +55,11 @@ figure{
     float:left;
 }
 
+/* Name */
+#name{
+    font-size: 3em;
+}
+
 /* Work */
 #work{
     height:300px;
