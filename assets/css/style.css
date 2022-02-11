@@ -49,6 +49,11 @@ figure{
     background-color: beige;
 }
 
+/* Portrait picture */
+#about img{
+    width:20%;
+}
+
 /* Work */
 #work{
     height:300px;
