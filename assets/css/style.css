@@ -1,3 +1,4 @@
+
 /* Remove margin and padding for whole page */
 *{
     margin:0;
@@ -60,9 +61,12 @@ figure{
     font-size: 3em;
 }
 
+/* Container for work section */
+.project-container{
+    width:50%;
+}
 /* Work */
 #work{
-    height:300px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
