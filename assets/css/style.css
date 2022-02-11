@@ -11,7 +11,6 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color:#14213d;
-    color:#fca311;
     padding:20px;
 }
 
@@ -29,7 +28,7 @@ nav ul{
 nav a{
     text-decoration: none;
     cursor: pointer;
-    color:#fca311;
+    color:#fff6ff;
 }
 
 /* Add glow to links */
@@ -41,13 +40,13 @@ nav a:hover{
 /* Cover Image */
 figure{
     height:300px;
-    background-color: #e5e5e5;
+    background-color: #605178;
 }
 
 /* About me */
 #about{
     height:300px;
-    background-color: beige;
+    background-color: #cdbee7;
 }
 
 /* Portrait picture */
@@ -66,6 +65,7 @@ figure{
     clear:both;
     display:flex;
     justify-content: space-around;
+    background: #3f4275;
 }
 
 /* Container for projects */
@@ -96,5 +96,5 @@ figure{
 /* Contact */
 #contact{
     height:300px;
-    background-color: beige;
+    background-color: #e7c4ff;
 }
