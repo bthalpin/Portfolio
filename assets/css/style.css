@@ -97,14 +97,14 @@ figure{
     box-shadow:1rem 1rem 1rem black;
 }
 
-.detail{
+.details{
     display:none;
     background:blue;
     min-width: 100px;
     min-height: 100px;
 }
 
-.project:hover .detail{
+.project:hover .details{
     display:block;
 }
 
