@@ -110,6 +110,7 @@ figure{
     transition:all 0.3s ease-in-out;
     top:20px;
     right:-100px;
+    z-index: 1;
 }
 
 .project:hover .details{
