@@ -61,16 +61,17 @@ figure{
     font-size: 3em;
 }
 
-/* Container for work section */
-.project-container{
-    width:50%;
-}
 /* Work */
 #work{
+    clear:both;
+}
+
+/* Container for projects */
+.project-container{
+    width:50%;    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    clear:both;
 }
 
 /* Container for all projects */
