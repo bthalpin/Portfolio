@@ -52,6 +52,7 @@ figure{
 /* Portrait picture */
 #portrait{
     width:20%;
+    float:left;
 }
 
 /* Work */
@@ -60,6 +61,7 @@ figure{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    clear:both;
 }
 
 /* Container for all projects */
