@@ -1,4 +1,6 @@
-
+:root{
+    --section-border:1px solid white;
+}
 /* Remove margin and padding for whole page */
 *{
     margin:0;
@@ -6,6 +8,9 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
 /* Navigation bar */
 header{
     display:flex;
@@ -27,8 +32,6 @@ nav ul{
 }
 
 nav a{
-    text-decoration: none;
-    cursor: pointer;
     color:#fff6ff;
 }
 
@@ -43,13 +46,15 @@ figure{
     height:300px;
     background-image: url(../images/Keyboard.jpg);
     background-size: cover;
+    border-top:var(--section-border);
 }
 
 /* About me */
 #about{
     padding:3rem;
     height:300px;
-    background-color: #cdbee7;
+    background-color: #cdbee7;    
+    border-top:var(--section-border);
 }
 
 .about-container{
@@ -75,6 +80,7 @@ figure{
     display:flex;
     justify-content: space-around;
     background: #3f4275;
+    border-top:var(--section-border);
 }
 
 /* Container for projects */
@@ -91,56 +97,49 @@ figure{
     position:relative;
     height:200px;
     border:1px solid black;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     margin:1rem;
     transition:all 0.2s ease-in-out;
     cursor: pointer;
     box-shadow: 0.25rem 0.25rem 0.25rem #1c1d35;
 }
 
+/* Project card hover effect */
 .project:hover{
     transform:scale(1.1);
     box-shadow:1rem 1rem 1rem #1c1d35;
 }
 
-.detail{
-    display:none;
-    margin:auto;
-    width:100%;
-}
-
-.information{
-    width:42%;
-    margin:auto;
-    height:100px;
-    border:1px solid black;
-    display:inline-block;
-}
-.details{
-    display:none;
-    position:absolute;
-    background:blue;
-    width: 100px;
-    height: 160px;
-    transition:all 0.3s ease-in-out;
-    top:20px;
-    right:-100px;
-    z-index: 1;
-}
-
+/* Project title hidden on hover */
 .project>h2{
     text-align: center;
     margin-top:80px;
+    width:100%;
 }
 .project:hover>h2{
     display:none;
 }
 
+/* Hidden details */
+.detail{
+    display:none;
+    margin:auto;
+    width:100%;    
+    text-align: center;
+}
+
+.information{
+    width:100px;
+    margin:0.1rem auto;
+    height:100px;
+    border-radius:0.2rem;
+    box-shadow: 0.05rem 0.05rem 0.3rem #1c1d35 inset;
+}
+
+
+/* Display details on hover */
 .project:hover .detail{
     display:block;
-    text-align: center;
-    /* flex-wrap: wrap; */
-    /* box-shadow:1rem 1rem 1rem #1c1d35; */
 }
 
 /* First project */
@@ -155,6 +154,15 @@ figure{
 
 /* Contact */
 #contact{
-    height:300px;
     background-color: #e7c4ff;
+    border-top:var(--section-border);
 }
+
+/* Contact infor layout */
+footer ul{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    padding:2rem 0 3rem 0;
+}
+
