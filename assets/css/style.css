@@ -16,7 +16,7 @@ header{
 }
 
 nav{
-    width:30%;
+    width:40vw;
 }
 
 /* Navigation links */
@@ -47,6 +47,7 @@ figure{
 
 /* About me */
 #about{
+    padding:3rem;
     height:300px;
     background-color: #cdbee7;
 }
@@ -69,6 +70,7 @@ figure{
 
 /* Work */
 #work{
+    padding:3rem;
     clear:both;
     display:flex;
     justify-content: space-around;
@@ -91,16 +93,29 @@ figure{
     border:1px solid black;
     border-radius: 1rem;
     margin:1rem;
-    transition:all 0.3s ease-in-out;
+    transition:all 0.2s ease-in-out;
     cursor: pointer;
-    box-shadow: 0.25rem 0.25rem 0.25rem black;
+    box-shadow: 0.25rem 0.25rem 0.25rem #1c1d35;
 }
 
 .project:hover{
     transform:scale(1.1);
-    box-shadow:1rem 1rem 1rem black;
+    box-shadow:1rem 1rem 1rem #1c1d35;
 }
 
+.detail{
+    display:none;
+    margin:auto;
+    width:100%;
+}
+
+.information{
+    width:42%;
+    margin:auto;
+    height:100px;
+    border:1px solid black;
+    display:inline-block;
+}
 .details{
     display:none;
     position:absolute;
@@ -113,9 +128,19 @@ figure{
     z-index: 1;
 }
 
-.project:hover .details{
+.project>h2{
+    text-align: center;
+    margin-top:80px;
+}
+.project:hover>h2{
+    display:none;
+}
+
+.project:hover .detail{
     display:block;
-    box-shadow:1rem 1rem 1rem black;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    /* box-shadow:1rem 1rem 1rem #1c1d35; */
 }
 
 /* First project */
