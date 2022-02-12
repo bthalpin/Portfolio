@@ -2,10 +2,10 @@
     --section-border:1px solid white;
     --nav-background:#012c59;
     --about-background:#53687c;
-    --work-background:#8a8c91;
-    --project-background:#8a8c91;
+    --work-background:#232324;
+    --project-background:var(--work-background);
     --contact-background:#012c59;
-    --shadow:#545457;
+    --shadow:#000000;
 }
 
 /* 
@@ -102,6 +102,7 @@ figure{
     justify-content: space-around;
     background: var(--work-background);
     border-top:var(--section-border);
+    color:white;
 }
 
 /* Container for projects */
@@ -118,7 +119,7 @@ figure{
 .project{
     min-height:300px;
     height:35vh;
-    border:1px solid var(--shadow);
+    border:1px solid white;
     border-radius: 0.5rem;
     margin:1rem;
     transition:all 0.2s ease-in-out;
@@ -192,6 +193,8 @@ figure{
 
 .information{
     margin:0.5rem auto;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
     border-radius:0.5rem;
     box-shadow: 0.2rem 0.2rem 0.2rem var(--shadow) inset;
     background-color: var(--about-background);
@@ -222,12 +225,6 @@ figure{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#project-one{
-    background-image: url('../images/On-the-Beach.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 .project button{
