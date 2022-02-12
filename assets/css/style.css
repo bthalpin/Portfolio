@@ -1,9 +1,9 @@
 :root{
     --section-border:1px solid white;
     --nav-background:#012c59;
-    --about-background:#53687c;
-    --work-background:#232324;
-    --project-background:var(--work-background);
+    --about-background:linear-gradient(#bbd1e6,#8cb1d3);
+    --work-background:linear-gradient(to top,#3f48c2,#191f5c);
+    --project-background:linear-gradient(#3f48c2,#191f5c);
     --contact-background:#012c59;
     --shadow:#000000;
 }
@@ -74,7 +74,7 @@ figure{
 #about{
     padding:3rem;
     min-height:300px;
-    background-color: var(--about-background);    
+    background: var(--about-background);    
     border-top:var(--section-border);
 }
 
@@ -162,7 +162,7 @@ figure{
     transform:scale(1.1);
     box-shadow:1rem 1rem 1rem var(--shadow);
     background-image: none;
-    background-color: var(--project-background);
+    background: var(--project-background);
     border-right: 2px solid var(--shadow);
     border-bottom: 2px solid var(--shadow);
 }
@@ -228,9 +228,10 @@ figure{
 }
 
 .project button{
-    background-color: var(--nav-background);
+    background-color: rgb(25, 144, 223);
     border-radius: 0.3rem;
     width:40%;
+    height:3rem;
     padding:0.2rem;
     margin-top:0.4rem;
 }
