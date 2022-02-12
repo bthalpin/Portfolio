@@ -1,12 +1,37 @@
 :root{
     --section-border:1px solid white;
+    --nav-background:#2b2b2b;
+    --about-background:#86868b;
+    --work-background:#131313;
+    --project-background:#313131;
+    --contact-background:#2b2b2b;
+    --shadow:#000000;
+}
+
+/* 
+blue
+
+--section-border:1px solid white;
+    --nav-background:#4d6d9a;
+    --about-background:#86b3d1;
+    --work-background:#5f6366;
+    --project-background:#7a7f83;
+    --contact-background:#99ced3;
+    --shadow:#000000;
+*/
+
+/* 
+beach
+
+--section-border:1px solid white;
     --nav-background:#012c59;
     --about-background:linear-gradient(#bbd1e6,#8cb1d3);
     --work-background:linear-gradient(to top,#3f48c2,#191f5c);
     --project-background:linear-gradient(#3f48c2,#191f5c);
     --contact-background:#012c59;
     --shadow:#000000;
-}
+*/
+
 
 /* 
 space
@@ -119,7 +144,7 @@ figure{
 .project{
     min-height:300px;
     height:35vh;
-    border:1px solid white;
+    border:1px solid rgb(156, 156, 156);
     border-radius: 0.2rem;
     margin:1rem;
     transition:all 0.2s ease-in-out;
@@ -198,7 +223,7 @@ figure{
     border-bottom:1px solid white;
     border-radius:0.1rem;
     box-shadow: 0.2rem 0.2rem 0.2rem var(--shadow) inset;
-    background-color: var(--about-background);
+    background-color: var(--work-background);
     color:white;
     padding:1rem;
 }
@@ -229,14 +254,19 @@ figure{
 }
 
 
+/* 
+blue button
+rgb(25, 144, 223);
+*/
+
 /* Style for project links */
 .project a{
-    background-color: rgb(25, 144, 223);
-    border-radius: 0.7rem;
-    border-top:2px solid rgb(58, 183, 255);
-    border-left:2px solid rgb(58, 183, 255);
-    border-bottom:2px solid rgb(24, 72, 100);
-    border-right:2px solid rgb(24, 72, 100);
+    background-color: #db3529;
+    border-radius: 0.3rem;
+    border-top:2px solid #da6b63;
+    border-left:2px solid #da6b63;
+    border-bottom:2px solid #ad2a21;
+    border-right:2px solid #ad2a21;
     width:30%;
     height:100%;
     padding:0.2rem;
@@ -247,9 +277,13 @@ figure{
 /* Links grow on hover */
 .project a:hover{
     transform: scale(1.1);
-    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    box-shadow: 0.1rem 0.1rem 0.1rem #7c1e18;;
+    background-color: #f03a2d;
 }
 
+.detail>h2{
+    margin: 1rem auto;
+}
 
 
 /* Contact */
