@@ -3,7 +3,7 @@
     --nav-background:#012c59;
     --about-background:#53687c;
     --work-background:#8a8c91;
-    --project-background:#4e4f52;
+    --project-background:#8a8c91;
     --contact-background:#012c59;
     --shadow:#545457;
 }
@@ -73,7 +73,7 @@ figure{
 /* About me */
 #about{
     padding:3rem;
-    /* height:300px; */
+    min-height:300px;
     background-color: var(--about-background);    
     border-top:var(--section-border);
 }
