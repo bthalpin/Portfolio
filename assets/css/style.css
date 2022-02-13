@@ -127,9 +127,16 @@ figure{
     clear:both;
     display:flex;
     justify-content: space-around;
+    align-items: center;
     background: var(--work-background);
     border-top:var(--section-border);
     color:white;
+}
+
+.work-title{
+    margin: auto 0;
+    font-size: 4em;
+    align-self: center;
 }
 
 /* Container for projects */
@@ -157,19 +164,19 @@ figure{
 }
 
 .one{
-    background-image: url('../images/On-the-Beach.jpg');
+    background-image: url('../images/project-placeholder.png');
     background-size: cover;
     background-position: center;
 }
 
 .two{
-    background-image: url('../images/space-colors.jpg');
+    background-image: url('../images/project-placeholder2.png');
     background-size: cover;
     background-position: center;
 }
 
 .three{
-    background-image: url('../images/Keyboard.jpg');
+    background-image: url('../images/project-placeholder2.png');
     background-size: cover;
     background-position: center;
 }
@@ -306,6 +313,12 @@ footer ul{
     color:white;
 }
 
+@media screen and (min-width:1475px) {
+    .two,.three{
+        background-size: cover;
+    }
+    
+}
 @media screen and (max-width:950px) {
     #work{
         padding:1.5rem;
