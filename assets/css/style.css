@@ -147,7 +147,7 @@ figure{
     border:1px solid rgb(156, 156, 156);
     border-radius: 0.2rem;
     margin:1rem;
-    transition:all 0.2s ease-in-out;
+    transition:all 0.3s ease-in-out;
     box-shadow: 0.25rem 0.25rem 0.25rem var(--shadow);
     background-image: url('../images/On-the-Beach.jpg');
     background-size: cover;
@@ -184,7 +184,7 @@ figure{
 
 /* Project card hover effect */
 .project:hover{
-    transform:scale(1.1);
+    transform:scale(1.05);
     box-shadow:1rem 1rem 1rem var(--shadow);
     background-image: none;
     background: var(--project-background);
@@ -208,17 +208,12 @@ figure{
     margin:1rem auto;
     width:100%;    
     text-align: center;
+    padding:0.5rem;
 }
 
-.project-links{
-    display:flex;
-    justify-content: space-evenly;
-    /* margin:auto; */
-    width:100%;
-}
 
 .information{
-    margin:0.5rem auto;
+    /* margin:0.5rem auto; */
     border-right:1px solid white;
     border-bottom:1px solid white;
     border-radius:0.1rem;
@@ -226,16 +221,13 @@ figure{
     background-color: var(--work-background);
     color:white;
     padding:1rem;
+    height:100%;
+    transition: all 0.2s ease-in-out;
 }
 
-.large .information{
-    width:45%;    
-    height:180px;
-}
-
-.small .information{
-    width: 80%;
-    height:80px;
+.information:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 1rem pink;
 }
 
 .large p{
@@ -250,7 +242,18 @@ figure{
 .project:hover .detail{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height:300px;
+}
+
+.detail>a{
+    pointer-events: none;
+    width:46%;
+    height:80%;
+}
+
+.project:hover .detail>a{
+    pointer-events: all;
 }
 
 
@@ -260,7 +263,8 @@ rgb(25, 144, 223);
 */
 
 /* Style for project links */
-.project a{
+
+/* .project a{
     background-color: #db3529;
     border-radius: 0.3rem;
     border-top:2px solid #da6b63;
@@ -272,14 +276,15 @@ rgb(25, 144, 223);
     padding:0.2rem;
     margin-top:0.5rem 0 0.5rem 0;
     transition: all 0.2s ease-in-out;
-}
+} */
 
 /* Links grow on hover */
-.project a:hover{
+
+/* .project a:hover{
     transform: scale(1.1);
     box-shadow: 0.1rem 0.1rem 0.1rem #7c1e18;;
     background-color: #f03a2d;
-}
+} */
 
 .detail>h2{
     margin: 1rem auto;
@@ -301,6 +306,16 @@ footer ul{
     color:white;
 }
 
+@media screen and (max-width:950px) {
+    #work{
+        padding:1.5rem;
+    }
+
+    .project-container{
+        width:80vw;
+    }
+    
+}
 @media screen and (max-width:760px) {
     nav{
         width:50vw;
@@ -341,6 +356,12 @@ footer ul{
     .large,.small,.project-container{
         width:100vw;
     }
+    .small{
+        min-height:200px;
+    }
+    .small-info{
+        height:150px;
+    }
     .project{
         margin:1rem 0;
     }
@@ -350,6 +371,9 @@ footer ul{
     #work>section>h2{
         text-align: center;
         margin-top:1rem;
+    }
+    .small>.detail{
+        height:200px;
     }
 }
 
