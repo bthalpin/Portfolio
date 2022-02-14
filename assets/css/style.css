@@ -76,12 +76,15 @@ nav ul{
 
 /* Style all links */
 a{
+    display:inline-block;
     text-decoration: none;
     color:#fff6ff;
+    transition: all 0.2s ease-in-out;
 }
 
 /* Add glow to links */
 nav a:hover,footer a:hover{
+    transform:scale(1.1);
     color:white;
     text-shadow: 0px 0px 10px white;
 }
@@ -90,7 +93,11 @@ nav a:hover,footer a:hover{
 figure{
     height:40vh;
     width:100vw;
-    background-color: var(--about-background);
+    background-color: var(--work-background);
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     /* background-image: url(../images/background.png);
     background-size: cover; */
     /* background-position: 50% 18%; */
@@ -100,8 +107,14 @@ figure{
 #about{
     padding:3rem;
     min-height:300px;
-    background-image: url(../images/background.png);
-    background-size: cover;
+    /* background-image: url(../images/background.png);
+    background-size: cover; */
+    background-color: #544f57;
+    color:rgb(233, 224, 224);
+    border-top:1px solid rgb(238, 162, 162);
+}
+
+#about span{
     color:white;
 }
 
@@ -141,7 +154,7 @@ figure{
 
 /* Container for projects */
 .project-container{
-    width:70vw;    
+    width:80vw;    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -151,6 +164,9 @@ figure{
 
 /* Container for all projects */
 .project{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
     min-height:300px;
     height:35vh;
     border:1px solid rgb(156, 156, 156);
@@ -158,13 +174,17 @@ figure{
     margin:1rem;
     transition:all 0.3s ease-in-out;
     box-shadow: 0.25rem 0.25rem 0.25rem var(--shadow);
-    background-image: url('../images/On-the-Beach.jpg');
+}
+
+/* Screenshot of the projects.  Each will have a different picture once projects are complete */
+.one{
+    background-image: url('../images/project-placeholder.png');
     background-size: cover;
     background-position: center;
 }
 
-.one{
-    background-image: url('../images/project-placeholder.png');
+.one-small{
+    background-image: url('../images/project-placeholder2.png');
     background-size: cover;
     background-position: center;
 }
@@ -183,12 +203,12 @@ figure{
 
 /* First project */
 .large{
-    width:50vw;
+    width:70vw;
 }
 
 /* Other projects */
 .small{
-    width:24vw;
+    width:33vw;
 }
 
 /* Project card hover effect */
@@ -203,9 +223,7 @@ figure{
 
 /* Project title hidden on hover */
 .project>h2{
-    text-align: center;
-    margin-top:80px;
-    width:100%;
+   margin-bottom:2rem;
 }
 .project:hover>h2{
     display:none;
@@ -213,8 +231,9 @@ figure{
 
 /* Hidden details */
 .detail{
-    display:none;
-    margin:1rem auto;
+    display:none;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width:100%;    
     text-align: center;
     padding:0.5rem;
@@ -223,6 +242,10 @@ figure{
 
 .information{
     /* margin:0.5rem auto; */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
     border-right:1px solid white;
     border-bottom:1px solid white;
     border-radius:0.1rem;
@@ -239,6 +262,10 @@ figure{
     box-shadow: 0 0 1rem pink;
 }
 
+.information>section{
+    width:100%;
+}
+
 .large p{
     font-size: 0.7rem;
 }
@@ -250,17 +277,18 @@ figure{
 /* Display details on hover */
 .project:hover .detail{
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height:300px;
+    min-height:300px;
+    height:90%;
 }
 
 .detail>a{
     width:46%;
     height:80%;
+    display:none;
 }
 
 .project:hover .detail>a{
+    display:block;
 }
 
 
@@ -295,6 +323,7 @@ rgb(25, 144, 223);
 
 .detail>h2{
     margin: 1rem auto;
+    width:100%;
 }
 
 
@@ -329,7 +358,7 @@ footer ul{
     }
     
 }
-@media screen and (max-width:760px) {
+@media screen and (max-width:790px) {
     nav{
         width:50vw;
     }
@@ -342,8 +371,45 @@ footer ul{
     #about{
         text-align: center;
     }
+    #work{
+        display:block;
+        padding: 0;
+    }
+    #work>section>h2{
+        text-align: center;
+        margin-top:1rem;
+    }
+    .project-container{
+        width:100vw;
+    }
+    .project>h2{
+        /* display:none; */
+    }
+    
+    .detail{
+        /* display:flex; */
+        height:300px;
+    }
+    .detail>a{
+        display:block;
+    }
+    .detail>h2{
+        margin-top:1.1rem;
+    }
+    .project:hover .detail{
+        min-height:200px;
+    }
+    
     .small{
-        width:50vw;
+        min-height:210px;
+        width:70vw;
+    }
+    .small-info{
+        height:150px;
+    }
+    
+    .small>.detail{
+        height:200px;
     }
     .large{
         width:70vw;
@@ -365,18 +431,8 @@ footer ul{
         width:90vw;
         justify-content: space-between;
     }
-    #work{
-        display:block;
-        padding: 0;
-    }
-    .large,.small,.project-container{
+    .large,.small{
         width:100vw;
-    }
-    .small{
-        min-height:200px;
-    }
-    .small-info{
-        height:150px;
     }
     .project{
         margin:1rem 0;
@@ -384,13 +440,7 @@ footer ul{
     .project:hover{
         transform: none;
     }
-    #work>section>h2{
-        text-align: center;
-        margin-top:1rem;
-    }
-    .small>.detail{
-        height:200px;
-    }
+   
 }
 
 @media screen and (max-width:350px) {
