@@ -440,6 +440,9 @@ footer ul{
     .project:hover{
         transform: none;
     }
+    .work-title{
+        font-size: 3em;
+    }
    
 }
 
