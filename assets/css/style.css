@@ -62,14 +62,21 @@ nav a:hover,footer a:hover{
 
 /* Container for contents of about section */
 .about-container{
-    width:70vw;
-    margin:0 auto;
+    width:80vw;
+    display:flex;
+    justify-content: space-around;
+    margin:auto;
 }
 
 /* Portrait picture */
 #portrait{
     width:200px;
-    float:left;
+    border:15px solid var(--nav-background);
+    border-radius:0.2rem;
+    
+}
+.about-container p{
+    width:55%;
 }
 
 /* Style for my name */
@@ -185,7 +192,7 @@ nav a:hover,footer a:hover{
     justify-content: center;
     align-items: flex-end;
     border-radius:0.1rem;
-
+    font-size: 1rem;
     /* Adds a slight inset effect */
     border-right:1px solid white;
     border-bottom:1px solid white;    
@@ -209,11 +216,11 @@ nav a:hover,footer a:hover{
 }
 
 .large p{
-    font-size: 0.7rem;
+    font-size: 0.7em;
 }
 
 .small p{
-    font-size:0.6rem;
+    font-size:0.6em;
 }
 
 /* Display details on hover */
@@ -255,8 +262,14 @@ footer ul{
 
 /* Project image resize for large screens */
 @media screen and (min-width:1475px) {
+    *{
+        font-size: 1.1em;
+    }
     .two,.three{
         background-size: cover;
+    }
+    .about-container p {
+        width:40%;
     }
     
 }
@@ -287,6 +300,14 @@ footer ul{
 
     #about{
         text-align: center;
+    }
+    
+    .about-container{
+        display:block;
+    }
+    .about-container p{
+        margin: auto;
+        width:100%;
     }
 
     #work{
@@ -362,6 +383,10 @@ footer ul{
 
     #name{
         display:inline-block;
+    }
+
+    .about-container{
+        display:block;
     }
 
     .project{
