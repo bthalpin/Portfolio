@@ -64,13 +64,15 @@ nav a:hover,footer a:hover{
 .about-container{
     width:80vw;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     margin:auto;
 }
 
 /* Portrait picture */
 #portrait{
     width:200px;
+    height:200px;
     border:15px solid var(--nav-background);
     border-radius:0.2rem;
     
@@ -78,7 +80,7 @@ nav a:hover,footer a:hover{
 
 /* Width of about paragraph */
 .about-container p{
-    width:55%;
+    width:100%;
 }
 
 /* Style for my name */
@@ -101,7 +103,7 @@ nav a:hover,footer a:hover{
 
 .work-title{
     margin: auto 0;
-    font-size: 4em;
+    font-size: 3em;
     align-self: center;
 }
 
@@ -265,13 +267,13 @@ footer ul{
 /* Project image resize for large screens */
 @media screen and (min-width:1475px) {
     *{
-        font-size: 1.1em;
+        font-size: 1.05em;
     }
     .two,.three{
         background-size: cover;
     }
     .about-container p {
-        width:40%;
+        /* width:40%; */
     }
     
 }
@@ -342,9 +344,11 @@ footer ul{
     .project:hover .detail{
         min-height:200px;
     }
-    
+
+    /* Makes small project area shorter but same width as large project */
     .small{
         min-height:210px;
+        height:210px;
         width:70vw;
     }
 
