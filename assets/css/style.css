@@ -180,25 +180,25 @@ figure{
 .one{
     background-image: url('../images/project-placeholder.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
-.one-small{
-    background-image: url('../images/project-placeholder2.png');
+/* .one-small{
+    background-image: url('../images/project-placeholder.png');
     background-size: cover;
-    background-position: center;
-}
+    background-position: top;
+} */
 
 .two{
-    background-image: url('../images/project-placeholder2.png');
+    background-image: url('../images/project-placeholder-2.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .three{
-    background-image: url('../images/project-placeholder2.png');
+    background-image: url('../images/project-placeholder-3.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 /* First project */
@@ -382,12 +382,10 @@ footer ul{
     .project-container{
         width:100vw;
     }
-    .project>h2{
-        /* display:none; */
-    }
+   
     
-    .detail{
-        /* display:flex; */
+    
+    .detail{        
         height:300px;
     }
     .detail>a{
@@ -431,6 +429,13 @@ footer ul{
         width:90vw;
         justify-content: space-between;
     }
+    #name{
+        display:inline-block;
+    }
+    .project{
+        background-image: none;
+        background-color: var(--project-background);
+    }
     .large,.small{
         width:100vw;
     }
@@ -440,15 +445,24 @@ footer ul{
     .project:hover{
         transform: none;
     }
+    .project>h2{
+        display:none;
+    }
+    .detail{
+        display:flex;
+    }
     .work-title{
         font-size: 3em;
     }
    
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:370px) {
     nav ul{
         display:block;
         text-align: end;
+    }
+    #name{
+        font-size: 2em;
     }
 }
