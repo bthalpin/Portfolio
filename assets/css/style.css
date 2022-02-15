@@ -79,8 +79,8 @@ nav a:hover,footer a:hover{
 }
 
 /* Width of about paragraph */
-.about-container p{
-    width:100%;
+.about-container section{
+    width:55%;
 }
 
 /* Style for my name */
@@ -272,8 +272,8 @@ footer ul{
     .two,.three{
         background-size: cover;
     }
-    .about-container p {
-        /* width:40%; */
+    .about-container section {
+        width:40%;
     }
     
 }
@@ -309,7 +309,7 @@ footer ul{
     .about-container{
         display:block;
     }
-    .about-container p{
+    .about-container section{
         margin: auto;
         width:100%;
     }
