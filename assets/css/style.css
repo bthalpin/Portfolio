@@ -75,6 +75,8 @@ nav a:hover,footer a:hover{
     border-radius:0.2rem;
     
 }
+
+/* Width of about paragraph */
 .about-container p{
     width:55%;
 }
