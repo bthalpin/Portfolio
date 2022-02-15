@@ -8,44 +8,6 @@
     --shadow:#000000;
 }
 
-/* 
-blue
-
---section-border:1px solid white;
-    --nav-background:#4d6d9a;
-    --about-background:#86b3d1;
-    --work-background:#5f6366;
-    --project-background:#7a7f83;
-    --contact-background:#99ced3;
-    --shadow:#000000;
-*/
-
-/* 
-beach
-
---section-border:1px solid white;
-    --nav-background:#012c59;
-    --about-background:linear-gradient(#bbd1e6,#8cb1d3);
-    --work-background:linear-gradient(to top,#3f48c2,#191f5c);
-    --project-background:linear-gradient(#3f48c2,#191f5c);
-    --contact-background:#012c59;
-    --shadow:#000000;
-*/
-
-
-/* 
-space
-
-nav 
-    background-color:#14213d;
-about
-    background-color: #cdbee7;    
-work
-    background: #3f4275;
-contact
-    background-color: #e7c4ff;
-*/
-
 /* Remove margin and padding for whole page */
 *{
     margin:0;
@@ -89,35 +51,16 @@ nav a:hover,footer a:hover{
     text-shadow: 0px 0px 10px white;
 }
 
-/* Cover Image */
-figure{
-    height:40vh;
-    width:100vw;
-    background-color: var(--work-background);
-    color:white;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    /* background-image: url(../images/background.png);
-    background-size: cover; */
-    /* background-position: 50% 18%; */
-}
-
 /* About me */
 #about{
     padding:3rem;
     min-height:300px;
-    /* background-image: url(../images/background.png);
-    background-size: cover; */
     background-color: #544f57;
     color:rgb(233, 224, 224);
     border-top:1px solid rgb(238, 162, 162);
 }
 
-#about span{
-    color:white;
-}
-
+/* Container for contents of about section */
 .about-container{
     width:70vw;
     margin:0 auto;
@@ -129,9 +72,10 @@ figure{
     float:left;
 }
 
-/* Name */
+/* Style for my name */
 #name{
     font-size: 3em;
+    color:white;
 }
 
 /* Work */
@@ -152,17 +96,16 @@ figure{
     align-self: center;
 }
 
-/* Container for projects */
+/* Container for all projects */
 .project-container{
     width:80vw;    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 }
 
-/* Container for all projects */
+/* Container for each project */
 .project{
     display:flex;
     justify-content: center;
@@ -176,18 +119,17 @@ figure{
     box-shadow: 0.25rem 0.25rem 0.25rem var(--shadow);
 }
 
+/* Place project title close to bottom */
+.project>h2{
+    margin-bottom:2rem;
+ }
+
 /* Screenshot of the projects.  Each will have a different picture once projects are complete */
 .one{
     background-image: url('../images/project-placeholder.png');
     background-size: cover;
     background-position: top;
 }
-
-/* .one-small{
-    background-image: url('../images/project-placeholder.png');
-    background-size: cover;
-    background-position: top;
-} */
 
 .two{
     background-image: url('../images/project-placeholder-2.png');
@@ -201,12 +143,12 @@ figure{
     background-position: top;
 }
 
-/* First project */
+/* First project container size */
 .large{
     width:70vw;
 }
 
-/* Other projects */
+/* Other projects container size */
 .small{
     width:33vw;
 }
@@ -222,9 +164,6 @@ figure{
 }
 
 /* Project title hidden on hover */
-.project>h2{
-   margin-bottom:2rem;
-}
 .project:hover>h2{
     display:none;
 }
@@ -239,24 +178,27 @@ figure{
     padding:0.5rem;
 }
 
-
+/* Information  */
 .information{
-    /* margin:0.5rem auto; */
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    border-right:1px solid white;
-    border-bottom:1px solid white;
     border-radius:0.1rem;
+
+    /* Adds a slight inset effect */
+    border-right:1px solid white;
+    border-bottom:1px solid white;    
     box-shadow: 0.2rem 0.2rem 0.2rem var(--shadow) inset;
     background-color: var(--work-background);
+
     color:white;
     padding:1rem;
     height:100%;
     transition: all 0.2s ease-in-out;
 }
 
+/* Information section grows slightly and glows on hover */
 .information:hover{
     transform:scale(1.05);
     box-shadow: 0 0 1rem pink;
@@ -291,41 +233,10 @@ figure{
     display:block;
 }
 
-
-/* 
-blue button
-rgb(25, 144, 223);
-*/
-
-/* Style for project links */
-
-/* .project a{
-    background-color: #db3529;
-    border-radius: 0.3rem;
-    border-top:2px solid #da6b63;
-    border-left:2px solid #da6b63;
-    border-bottom:2px solid #ad2a21;
-    border-right:2px solid #ad2a21;
-    width:30%;
-    height:100%;
-    padding:0.2rem;
-    margin-top:0.5rem 0 0.5rem 0;
-    transition: all 0.2s ease-in-out;
-} */
-
-/* Links grow on hover */
-
-/* .project a:hover{
-    transform: scale(1.1);
-    box-shadow: 0.1rem 0.1rem 0.1rem #7c1e18;;
-    background-color: #f03a2d;
-} */
-
 .detail>h2{
     margin: 1rem auto;
     width:100%;
 }
-
 
 /* Contact */
 #contact{
@@ -333,7 +244,7 @@ rgb(25, 144, 223);
     border-top:var(--section-border);
 }
 
-/* Contact infor layout */
+/* Contact info layout */
 footer ul{
     display:flex;
     justify-content: space-around;
@@ -342,12 +253,15 @@ footer ul{
     color:white;
 }
 
+/* Project image resize for large screens */
 @media screen and (min-width:1475px) {
     .two,.three{
         background-size: cover;
     }
     
 }
+
+/* Increases the size of the project area */
 @media screen and (max-width:950px) {
     #work{
         padding:1.5rem;
@@ -358,42 +272,50 @@ footer ul{
     }
     
 }
+
+
 @media screen and (max-width:790px) {
+    /* Increases navigation link area */
     nav{
         width:50vw;
     }
-    figure{
-        height:25vh;
-    }
+
+    /* about and work section changed to fit on smaller screen */
     #about img{
         float: none;
     }
+
     #about{
         text-align: center;
     }
+
     #work{
         display:block;
         padding: 0;
     }
+
     #work>section>h2{
         text-align: center;
         margin-top:1rem;
     }
+
     .project-container{
         width:100vw;
     }
-   
     
-    
+    /* Making detail and information sections fit in smaller area */
     .detail{        
         height:300px;
     }
+
     .detail>a{
         display:block;
     }
+
     .detail>h2{
         margin-top:1.1rem;
     }
+
     .project:hover .detail{
         min-height:200px;
     }
@@ -402,6 +324,7 @@ footer ul{
         min-height:210px;
         width:70vw;
     }
+
     .small-info{
         height:150px;
     }
@@ -409,55 +332,75 @@ footer ul{
     .small>.detail{
         height:200px;
     }
+
     .large{
         width:70vw;
     }
+
+    /* Change footer to block for easier navigation on smaller screen */
     footer ul{
         display:block;
         text-align: center;
     }
+
     footer h3{
         padding:0 0 1rem 0;
     }
+
 }
 
 @media screen and (max-width:500px) {
     header{
         padding:1rem;
     }
+
+    /* Sets nav links across the top of screen for easier navigation on small screens */
     nav,nav ul{
         width:90vw;
         justify-content: space-between;
     }
+
     #name{
         display:inline-block;
     }
+
     .project{
         background-image: none;
         background-color: var(--project-background);
     }
+
+    /* Projects now take up full screen */
     .large,.small{
         width:100vw;
     }
+
     .project{
         margin:1rem 0;
     }
+
+    /* Change details section to always display */
     .project:hover{
         transform: none;
     }
+
     .project>h2{
         display:none;
     }
+
     .detail{
         display:flex;
     }
+
     .work-title{
         font-size: 3em;
     }
+
    
 }
 
+
 @media screen and (max-width:370px) {
+    /* Consolidates navigation links for really small screens */
     nav ul{
         display:block;
         text-align: end;
