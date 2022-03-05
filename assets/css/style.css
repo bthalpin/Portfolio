@@ -166,9 +166,9 @@ nav a:hover,footer a:hover{
     font-size: 3rem;
     padding:1rem;
     border-radius: 0.5rem;
-    border:var(--section-border);
+    border:1px solid black;
     text-shadow: 0.1rem 0.1rem 0.1rem black;
-    box-shadow: 0.5rem 0.5rem 0.5rem var(--contact-background);
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--work-background);
  }
 
 /* Screenshot of the projects.  Each will have a different picture once projects are complete */
