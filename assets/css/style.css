@@ -195,16 +195,13 @@ nav a:hover,footer a:hover{
 .detail{
     display:none;    
     position:fixed;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     width:100vw;  
     height:100vh;
     top:0;  
     left:0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.719);
-    /* text-align: center; */
-    /* padding:0.5rem; */
 }
 
 .card{
@@ -217,7 +214,6 @@ nav a:hover,footer a:hover{
     justify-content: space-around;
     align-items: center;
     border-radius:0.3rem;
-    /* opacity: 1; */
 }
 
 .webAppDetails,.sourceCodeDetails{
@@ -293,13 +289,13 @@ nav a:hover,footer a:hover{
     width:fit-content;
 
 } */
-.large p{
+/* .large p{
     font-size: 0.7em;
 }
 
 .small p{
     font-size:0.6em;
-}
+} */
 
 /* Display details on hover */
 /* .project:hover .detail{
@@ -318,10 +314,10 @@ nav a:hover,footer a:hover{
     display:block;
 } */
 
-.detail>h2{
+/* .detail>h2{
     margin: 1rem auto;
     width:100%;
-}
+} */
 
 /* Contact */
 #contact{
@@ -343,9 +339,9 @@ footer ul{
     *{
         font-size: 1.05em;
     }
-    .two,.three{
+    /* .two,.three{
         background-size: cover;
-    }
+    } */
     .about-container section {
         width:40%;
     }
