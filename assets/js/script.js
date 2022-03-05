@@ -1,6 +1,6 @@
 const detailEl = document.querySelectorAll('.detail')
 const projectEl = document.querySelectorAll('.project')
-const webAppLink = document.querySelectorAll('.screenShot')
+const webAppLink = document.querySelectorAll('.webAppDetails')
 const sourceCodeLink = document.querySelectorAll('.sourceCodeDetails')
 
 let currentProject;
@@ -23,7 +23,7 @@ function showDetails(event) {
 
 function closeModal(event){
     console.log(event)
-    if (event.target.classList[0]=='detail'){
+    if (event.target.classList[0]=='detail'||event.key==='Escape'){
         
         currentProject.setAttribute('style','display:none')
     // projectEl[0].setAttribute('style','display:flex')
@@ -31,15 +31,24 @@ function closeModal(event){
 }
 
 function visitLink (event){
-    if (event.target.classList[0]==='screenShot'){
-        window.location = webAppLocation[Number(event.target.dataset.number)-1]
+    for (let i=0;i<3;i++){
+        if (webAppLink[i].contains(event.target)){
+            window.location = webAppLocation[i]
+        }
+        if (sourceCodeLink[i].contains(event.target)){
+            window.location = sourceCodeLocation[i]
+        }
 
     }
-    else{
-        window.location = sourceCodeLocation[Number(event.target.dataset.number)-1]
-    }
-    // window.location = 'https://samif812.github.io/What-Movie-Was-That-/'
 }
+
+function checkEscape(event){
+    if (event.key==='Escape'){
+        closeModal(event)
+    }
+}
+
+window.addEventListener('keydown',checkEscape)
 window.onclick = closeModal
 projectEl.forEach(project=>{
     project.onclick = showDetails
