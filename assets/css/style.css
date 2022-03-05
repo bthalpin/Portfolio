@@ -350,18 +350,28 @@ nav a:hover,footer a:hover{
 }
 
 /* Contact info layout */
+
+footer h2{
+    color:white;
+    text-align: center;
+    margin:auto;
+}
 footer ul{
     display:flex;
     justify-content: space-around;
     list-style: none;
     padding:2rem 0 3rem 0;
     color:white;
+    margin-left:1.3rem;
 }
 
 /* Project image resize for large screens */
 @media screen and (min-width:1475px) {
     *{
         font-size: 1.05em;
+    }
+    h2{
+        font-size: 2rem;
     }
     /* .two,.three{
         background-size: cover;
@@ -459,13 +469,20 @@ footer ul{
     }
 
     /* Change footer to block for easier navigation on smaller screen */
+    footer{
+        padding:1rem;
+    }
     footer ul{
         display:block;
         text-align: center;
+        margin:0;
+        padding:0;
     }
-
+    footer li{
+        margin:1rem 0;
+    }
     footer h3{
-        padding:0 0 1rem 0;
+        /* padding:0 0 1rem 0; */
     }
 
 }
