@@ -138,6 +138,7 @@ nav a:hover,footer a:hover{
 /* Place project title close to bottom */
 .project>h2{
     /* margin-bottom:2rem; */
+    text-align: center;
     background-color: #86868bb4;
     font-size: 3rem;
     padding:1rem;
