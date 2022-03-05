@@ -14,7 +14,7 @@ The footer of the page contains contact information for my email, Github, and Li
 
 [Code Quiz - App](https://bthalpin.github.io/Code-Quiz/)
 
-[CodeQuiz - Code](https://github.com/bthalpin/Code-Quiz)
+[Code Quiz - Code](https://github.com/bthalpin/Code-Quiz)
 
 [Weather Forecast - App](https://bthalpin.github.io/Weather-Forecast/)
 
