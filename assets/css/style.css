@@ -2,7 +2,7 @@
     --section-border:2px solid #cf5e18;
     --border-color:#cf5e18;
     --nav-background:#425472;
-    --about-background:#121822;
+    --about-background:#dbdbdb;
     --work-background:#1c1e22;
     --project-background:#868f9d;
     --contact-background:#5b687e;
@@ -81,7 +81,7 @@ nav a:hover,footer a:hover{
     min-height:300px;
     background-color: var(--about-background);
     /* background-color: #544f57; */
-    color:rgb(233, 224, 224);
+    color:rgb(59, 59, 59);
     border-top:1px solid var(--border-color);
 }
 
@@ -98,7 +98,7 @@ nav a:hover,footer a:hover{
 #portrait{
     width:190px;
     height:200px;
-    border:5px solid var(--nav-background);
+    border:1px solid var(--nav-background);
     border-radius:0.2rem;
     
 }
@@ -111,7 +111,7 @@ nav a:hover,footer a:hover{
 /* Style for my name */
 #name{
     font-size: 3em;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 /* Work */
