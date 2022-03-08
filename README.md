@@ -8,9 +8,9 @@ The footer of the page contains contact information for my email, Github, and Li
 ## Links
 [Portfolio](https://bthalpin.github.io/Portfolio)
 
-[What Movie Was That? - App](https://samif812.github.io/What-Movie-Was-That-/)
+[What Movie Was That? - App](https://bthalpin.github.io/What-Movie-Was-That/)
 
-[What Movie Was That? - Code](https://github.com/SamiF812/What-Movie-Was-That-)
+[What Movie Was That? - Code](https://github.com/bthalpin/What-Movie-Was-That)
 
 [Code Quiz - App](https://bthalpin.github.io/Code-Quiz/)
 
