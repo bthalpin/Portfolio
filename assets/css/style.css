@@ -442,6 +442,10 @@ footer ul{
     #about{
         text-align: center;
     }
+    #statement{
+        text-align: start;
+        margin-left:2rem;
+    } 
     
     .about-container{
         display:block;
@@ -539,7 +543,9 @@ footer ul{
         display:block;
     }
 
-    
+    #statement{
+        margin-left:1rem;
+    }
 
     /* Projects now take up full screen */
     .large,.small{
@@ -587,6 +593,9 @@ footer ul{
     }
     #about{
         text-align: start;
+    }
+    #statement{
+        margin:0;
     }
    
 }
