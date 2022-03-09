@@ -70,7 +70,7 @@ a{
 
 /* Add glow to links */
 nav a:hover,footer a:hover{
-    transform:scale(1.1);
+    transform:scale(1.05);
     color:white;
     text-shadow: 0px 0px 10px white;
 }
@@ -128,8 +128,9 @@ nav a:hover,footer a:hover{
 
 .work-title{
     margin: auto 0;
-    font-size: 3em;
+    font-size: 2em;
     align-self: center;
+    color:var(--about-background)
 }
 
 /* Container for all projects */
@@ -212,6 +213,9 @@ nav a:hover,footer a:hover{
     width:33vw;
 }
 
+.project:hover{
+    border:1px solid black;
+}
 /* Project card hover effect */
 .project:hover .projectName{
     /* opacity:1; */
@@ -562,7 +566,7 @@ footer ul{
 
 
     .work-title{
-        font-size: 3em;
+        /* font-size: 3em; */
     }
 
     .card{
