@@ -1,9 +1,13 @@
 # Portfolio
-This is my portfolio.  There is a navigation bar for navigating to the about section, the work section, and the contact section.  The work section has three sample projects that will be replaced with the projects I create during the bootcamp.
+This is the portfolio of the work I've done so far in Rutgers Bootcamp.  Below you will find my three best projects. 
 
-The project boxes have an image of a sample project that you can hover over to produce two boxes.  One box is a small image of the project that you can click on to visit the deployed sample project. The other box contains a brief summary of the project and a description of the technology used to create it.  You can click on this box to be taken to the Github repository for the project. This hover effect is disabled for smaller windows to make it easier to navigate on mobile devices.
+First is a movie search site, ['What Movie Was That?'](https://bthalpin.github.io/What-Movie-Was-That/), where you can search your favorite movies to get information and watch a trailer. The app was created by my team of highly skilled software developers.  It fetches data from OMDB API for accurate movie details, and YouTube API to allow the user to watch the movie trailers.
 
-The footer of the page contains contact information for my email, Github, and Linkedin page.
+Next is a quiz app, ['Code Quiz'](https://bthalpin.github.io/Code-Quiz/). An app that randomly selects a number of questions that you have to answer before the time runs out.
+
+Finally is the weather app, ['Weather Forecast'](https://bthalpin.github.io/Weather-Forecast/). A weather app that fetches data from Open Weather API and allows the user to get accurate up to date weather for any city in the world.
+
+I hope you enjoy.  Feel free to contact me directly, or check out my GitHub repository and Linkedin pages by clicking the links in the contact section.
 
 ## Links
 [Portfolio](https://bthalpin.github.io/Portfolio)
