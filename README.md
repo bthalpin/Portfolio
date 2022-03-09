@@ -29,5 +29,5 @@ The following image displays the full portfolio page:
 ![Portfolio page for Brian Halpin](./assets/images/main-page.png)
 
 
-This image displays the work section hover effect:
+This image displays modal that is displayed when the project is clicked:
 ![Portfolio work section with mouse hovering project 1 displaying the details of the project and a glow effect](./assets/images/main-page-bottom.png)
