@@ -5,8 +5,8 @@ const sourceCodeLink = document.querySelectorAll('.sourceCodeDetails')
 
 let currentProject;
 const projectNumbers = ['one','two','three']
-const webAppLocation = ['https://bthalpin.github.io/What-Movie-Was-That/','https://bthalpin.github.io/Code-Quiz/','https://bthalpin.github.io/Weather-Forecast/']
-const sourceCodeLocation = ['https://github.com/bthalpin/What-Movie-Was-That','https://github.com/bthalpin/Code-Quiz','https://github.com/bthalpin/Weather-Forecast']
+const webAppLocation = ['https://snapshotban.herokuapp.com/login','https://bthalpin.github.io/What-Movie-Was-That/','https://bthalpin.github.io/Weather-Forecast/']
+const sourceCodeLocation = ['https://github.com/Akaiafas526/SnapShot','https://github.com/bthalpin/What-Movie-Was-That','https://github.com/bthalpin/Weather-Forecast']
 
 function showDetails(event) {
     if (event.target.dataset.project){
